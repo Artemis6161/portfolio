@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from '@chakra-ui/button';
 import { useColorMode } from '@chakra-ui/color-mode';
-import {Image} from '@chakra-ui/image';
+import {Image, Img} from '@chakra-ui/image';
 import {Circle,Stack,Flex,Box,Text} from "@chakra-ui/layout"
 const Header = () => {
     const { colorMode } = useColorMode();
@@ -20,7 +20,9 @@ const Header = () => {
         <Text>Hi,</Text>
         <Text>I'm Sangeetha Rajan.</Text>
         <Text> I design and Code simple yet beautiful websites.</Text>
+        <Button>Hire Me</Button>
         </Box>
+        <Img src="img/009 a.jpg" alt="image"></Img>
         </Flex>
         </Stack>
         
