@@ -1,8 +1,7 @@
 import React from 'react'
 import {Stack,Flex,Box,Text} from "@chakra-ui/layout";
 
-
-function project() {
+export default function App()  {
   return (
     <div >
       <Text id="Project">Project</Text>
@@ -12,4 +11,3 @@ function project() {
   )
 }
 
-export default project
