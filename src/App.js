@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import {  useColorModeValue } from "@chakra-ui/color-mode";
 import Skills from "./component/skills";
+import Product from "./component/product"
 
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import "./App.css";
-import Project from "./component/project";
+
 import Header from "./component/Header";
 import SocialIcon from "./component/social icon";
 import { Button} from "@chakra-ui/react";
@@ -28,7 +29,7 @@ import {
 
   return (
    
-   
+   <>
    <VStack p={5}>
         <Flex
           bg={useColorModeValue("white")}
@@ -62,9 +63,14 @@ import {
               </Button>
             </HashLink>
 
-            <HashLink smooth to="/#projects">
+            <HashLink smooth to="/#Projects">
               <Button ml="8" as="a" variant="ghost" aria-label="Blogs" my={5} w="100%">
               Projects
+              </Button>
+            </HashLink>
+            <HashLink smooth to="/#Say Hi">
+              <Button ml="8" as="a" variant="ghost" aria-label="Blogs" my={5} w="100%">
+              Say Hi
               </Button>
             </HashLink>
 
@@ -137,7 +143,7 @@ import {
                 </Button>
               </Link>
 
-              <HashLink to="/#projects">
+              <HashLink to="/#Projects">
                 <Button
                   as="a"
                   variant="ghost"
@@ -150,33 +156,33 @@ import {
                 > Projects </Button>
                 </HashLink>
 
-              <HashLink to="/#blogs">
+              <HashLink to="/#Skills">
                 <Button
                   as="a"
                   variant="ghost"
-                  aria-label="Blogs"
+                  aria-label="Skills"
                   my={5}
                   w="100%"
                   onClick={() => {
                     setToggle("none");
                   }}
                 >
-                  Blogs
+                  Skills
                 </Button>
               </HashLink>
 
-              <HashLink to="/#contact">
+              <HashLink to="/#Say Hi">
                 <Button
                   as="a"
                   variant="ghost"
-                  aria-label="Contact"
+                  aria-label="Say Hi"
                   my={5}
                   w="100%"
                   onClick={() => {
                     setToggle("none");
                   }}
                 >
-                  Contact
+                  Say Hi
                 </Button>
               </HashLink>
 
@@ -190,17 +196,13 @@ import {
         </Flex>
   
 </Flex>
-{/* <Top /> */}
+
 <Header />
 <Skills />
-<Project/>
+
+<Product />
 <SocialIcon />
-
 </VStack>
-
-
- );
-
-
-}
+</>
+ );}
 
