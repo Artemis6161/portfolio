@@ -1,39 +1,64 @@
 import React from 'react'
+
+import { IoLogoLinkedin } from "react-icons/io5"
 import { IconButton } from '@chakra-ui/button';
-import { VStack, Flex , Spacer} from "@chakra-ui/layout";
+// import { PseudoBox } from "@chakra-ui/core"
+import { VStack, Flex , Spacer,Link,Box, } from "@chakra-ui/layout";
+import { CPseudoBox } from '@chakra-ui/vue'
+import { VscGithub, VscTwitter } from "react-icons/vsc"
 import {
  
   FaInstagram,
   FaLinkedin,
   FaGithub,
+  FaInstagramSquare
 } from "react-icons/fa";
-const SocialIcon = () => {
+ const SocialLinks  = () => {
   return (
-    <div>
-         <VStack p={10}>
-<Flex w= "100%">
+<VStack p={5}>
+  <Box>
 
+       
+  <Flex  direction="row">
 
-  <Spacer />
- 
-<IconButton icon={<FaLinkedin/>}isRound='true' onClick={() => window.open("https://www.linkedin.com/in/sangeetha-rj-283106198/")} boxSize={50}/>
+  <Flex  justifyContent="space-between"ml={10} >
 
-<IconButton ml={8} icon={<FaGithub/>} isRound='true' onClick={() => window.open("https://github.com/Artemis6161")} boxSize={50}/>
+  <Link href="mailto:Sangeetharajan112@gmail.com" target="_blank">
+<VscGithub size="100px"/> 
 
-<IconButton ml={8} icon={<FaInstagram/>}isRound='true' onClick={() => window.open("https://www.instagram.com/spiceitupwithsan61/")} boxSize={50}/>
-
-
+</Link>
+</Flex>
+<Flex  justifyContent="space-between"ml={10} >
+<PseudoBox
+    as="button"
+    bg="teal.500"
+    py={2}
+    px={4}
+    ml={3}
+    rounded="md"
+    fontWeight="semibold"
+    color="white"
+    _hover={{ bg: "teal.600" }}
+    _focus={{ boxShadow: "outline" }}
+  >
+<Link href="mailto:Sangeetharajan112@gmail.com" target="_blank">
+<IoLogoLinkedin size="100px" />
+</Link>
+</PseudoBox>
 </Flex>
 
 
+<Flex  justifyContent="space-between"ml={10} >
+<Link href="https://www.instagram.com/spiceitupwithsan61/" target="_blank">
+<FaInstagramSquare size="100px"/>
+</Link>
+</Flex>
+</Flex>
+
+
+</Box>
 </VStack>
-      
-
-
-
-
-    </div>
   )
-}
+ }
 
-export default SocialIcon;
+export default SocialLinks
