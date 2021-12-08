@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import {  useColorModeValue } from "@chakra-ui/color-mode";
 import Skills from "./component/skills";
 import Product from "./component/product"
-
+import Contact from "./component/contact"
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import "./App.css";
 
 import Header from "./component/Header";
-import SocialIcon from "./component/social icon";
+import SocialLinks from "./component/social icon";
 import { Button} from "@chakra-ui/react";
 import { IconButton } from '@chakra-ui/button';
 import { HamburgerIcon, CloseIcon  } from "@chakra-ui/icons";
@@ -32,10 +32,15 @@ import {
    <>
    <VStack p={5}>
         <Flex
+         position="fixed"
+         bgColor="rgb(0, 40, 63, 0.7)"
+         top="0"
+         as="nav"
+         zIndex="5"
           bg={useColorModeValue("white")}
-          width="100vw"
-          top="1rem"
-          right="1rem"
+          width="100%"
+          // top="1rem"
+          // right="1rem"
           alignItems="center"
           justify="flex-end"
           pr="10"
@@ -199,9 +204,9 @@ import {
 
 <Header />
 <Skills />
-
 <Product />
-<SocialIcon />
+<Contact/>
+<SocialLinks />
 </VStack>
 </>
  );}

@@ -1,37 +1,45 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { chakra,Image,Badge,LinkOverlay,Tag,Link } from "@chakra-ui/react"
-import { VscLinkExternal,VscGithubInverted } from "react-icons/vsc";
+
 import { Stack,Flex,Box,Text,Heading } from "@chakra-ui/layout";
-import { Icon,StarIcon} from '@chakra-ui/react'
-import { MdSettings } from 'react-icons/md'
-function AirbnbExample({img,link}) {
-  return(
-    <div className="p">
-      <Box w='30%' h='4vh'  borderWidth='2px' borderRadius='10px 10px 0px 0px' overflow='hidden'>
-<Flex >
 
-      </Flex>
-
-      <Link href={link}/>
-<Image src={img} alt=""/>
-
-      </Box>
-    </div>
-  )
-    
-      
-       
-        
-  
-  
-
-      
+const AirbnbExample = ({img,title,desc,link}) => {
+  const[show, setshow] = useState(false);
+return (
  
+  <Link href={link} target="_blank" rel="noreferrer">
+  <Flex    borderWidth='2px' borderRadius='10px 10px 0px 0px' overflow='hidden' margin="15px" maxW="350px" height="179px" _hover="{bg: 'green'}"
+     
+
+
   
-         
-         
-        
-      
+  onMouseEnter={()=>setshow(true)} 
+  onMouseleave={()=>setshow(false)}>
+{show ?
+  <span>
+   
+  <Text>{title}</Text>
+            
+  <Text>{desc}</Text>
+   
     
-  }
+  </span>
+ : 
+  <Image width="100%" src={img} alt=""/>
+
+}
+
+</Flex>
+
+</Link>
+
+
+
+
+
+
+
+)
+      
+      }
   export default  AirbnbExample;

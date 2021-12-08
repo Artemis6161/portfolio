@@ -4,7 +4,7 @@ import { IoLogoLinkedin } from "react-icons/io5"
 import { IconButton } from '@chakra-ui/button';
 // import { PseudoBox } from "@chakra-ui/core"
 import { VStack, Flex , Spacer,Link,Box, } from "@chakra-ui/layout";
-import { CPseudoBox } from '@chakra-ui/vue'
+
 import { VscGithub, VscTwitter } from "react-icons/vsc"
 import {
  
@@ -21,36 +21,33 @@ import {
        
   <Flex  direction="row">
 
-  <Flex  justifyContent="space-between"ml={10} >
+  <Flex  justifyContent="space-between"ml={10}   _hover={{
+    background: "white",
+    color: "#6CC644",
+  }} transition="0.3s ease-in-out">
 
-  <Link href="mailto:Sangeetharajan112@gmail.com" target="_blank">
+  <Link href="https://github.com/Artemis6161" target="_blank">
 <VscGithub size="100px"/> 
 
 </Link>
 </Flex>
-<Flex  justifyContent="space-between"ml={10} >
-<PseudoBox
-    as="button"
-    bg="teal.500"
-    py={2}
-    px={4}
-    ml={3}
-    rounded="md"
-    fontWeight="semibold"
-    color="white"
-    _hover={{ bg: "teal.600" }}
-    _focus={{ boxShadow: "outline" }}
-  >
-<Link href="mailto:Sangeetharajan112@gmail.com" target="_blank">
+<Flex  justifyContent="space-between"ml={10}  _hover={{
+    background: "white",
+    color: "#0e76a8",
+  }} transition="0.3s ease-in-out">
+
+<Link href="https://www.linkedin.com/in/sangeetha-rj-283106198/" target="_blank">
 <IoLogoLinkedin size="100px" />
 </Link>
-</PseudoBox>
 </Flex>
 
 
-<Flex  justifyContent="space-between"ml={10} >
+<Flex  justifyContent="space-between"ml={10}  _hover={{
+    background: "white",
+    color: "#E4405F",
+  }}     transition="0.3s ease-in-out">
 <Link href="https://www.instagram.com/spiceitupwithsan61/" target="_blank">
-<FaInstagramSquare size="100px"/>
+<FaInstagramSquare size="100px" />
 </Link>
 </Flex>
 </Flex>

@@ -5,6 +5,7 @@ import { Button } from '@chakra-ui/button';
 import { useColorMode } from '@chakra-ui/color-mode';
 import {Image} from '@chakra-ui/image';
 import {Circle,Stack,Flex,Box,Text} from "@chakra-ui/layout";
+import { chakra,Badge,LinkOverlay,Tag,Link} from "@chakra-ui/react"
 import {useMediaQuery} from '@chakra-ui/media-query';
 
 
@@ -42,10 +43,14 @@ const Header = () => {
         fontWeight="bold"
         bgGradient="linear(to-r,cyan.400,blue.500,purple.600)"
         bgClip="text">I'm Sangeetha Rajan.</Text>
-        <Text color={isDark ? "gray.200" : "gray.500"}> I design and Code simple yet beautiful websites.</Text>
-        <Button mt={8} colorScheme="blue" 
-             
-            href={Sa}>Hire Me</Button>
+        <Text color={isDark ? "gray.200" : "Gray.900"}> I design and Code simple yet beautiful websites.</Text>
+        <Box flexGrow={1} delay={3}>
+        
+        <Link href="https://github.com/Artemis6161/portfolio/blob/master/src/component/img/sa.pdf" target="_blank">
+        <Button mt={8} colorScheme="blue" size='lg' fontSize="2xl" aria-label="Send Email" >Hire Me</Button>
+        </Link>
+        
+        </Box>
         </Box>
         <Image mt={isNotSmallerScreen?"0" : "12"}
         mb={isNotSmallerScreen?"0" : "12"}

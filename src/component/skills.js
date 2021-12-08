@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { useColorMode } from '@chakra-ui/color-mode';
 import {Flex,Box,Text, Heading,VStack} from "@chakra-ui/layout";
 
 import {
@@ -15,11 +15,17 @@ import {
     DiMongodb,} from "react-icons/di"
 
   export default function App() {
+    const { colorMode } = useColorMode();
+    const isDark = colorMode === "dark";
+   
   return (
 
 
-<VStack p={5}>
+    <VStack p={5}>
+
 <Flex>
+
+      
            
             
            <Heading   id="Skills"> Skills </Heading>
@@ -30,7 +36,7 @@ import {
            
           <Flex  direction="row">
           <Flex  justify="flex-end"  direction="column" my={5} >
-          <Flex   ml={10} mt={20}  my={10} >
+          <Flex   ml={10} mt={20}  my={10}>
          
          
         
@@ -78,7 +84,7 @@ import {
           <Text mr={7}>  python </Text>
           </Flex>
           <Flex  justifyContent="space-between"  ml={10}  my={5}>
-          <IoLogoGithub size="100px"color= 'white'/>
+          <IoLogoGithub color={isDark ? "white" : "black"}size="100px"/>
           <DiGit size="100px"color= '#1572B6'/>
           </Flex>
           <Flex>
@@ -92,13 +98,13 @@ import {
           <DiMongodb size="100px"color= '#4EA94B'/>
           </Flex>
           </Flex>
-       </Flex>
-
-      
-
+          </Flex>
           </Box>
-          {/* </SimpleGrid> */}
           </VStack>
+         
+     
+         
+       
  
           
 
