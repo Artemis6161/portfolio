@@ -81,7 +81,7 @@ import {
           
 
             <Text mr={20} ml={20}> Github</Text>
-          <Text mr={7}>  python </Text>
+          <Text mr={7}>  Git </Text>
           </Flex>
           <Flex  justifyContent="space-between"  ml={10}  my={5}>
           <IoLogoGithub color={isDark ? "white" : "black"}size="100px"/>
@@ -90,7 +90,7 @@ import {
           <Flex>
           
 
-            <Text mr={20} ml={20}> Git </Text>
+            <Text mr={20} ml={20}> python </Text>
           <Text mr={7}>  Mongo Db </Text>
           </Flex>
           <Flex  justifyContent="space-between" ml={10} my={5}>
