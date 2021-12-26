@@ -5,7 +5,7 @@ import { Stack,Flex,Box,Text,Heading } from "@chakra-ui/layout";
 const product = () => {
   return (
     <div>
-         <Box maxW="50px 100px" mx="auto" flexDirection="column" alignitems="center" textAlign="center">
+<Box maxW="50px 100px" mx="auto" flexDirection="column" alignitems="center" textAlign="center">
             
     <Heading id="Projects" fontSize='5xl'>
           Projects
