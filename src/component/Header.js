@@ -52,6 +52,7 @@ const Header = () => {
         
         </Box>
         </Box>
+        
         <Image mt={isNotSmallerScreen?"0" : "12"}
         mb={isNotSmallerScreen?"0" : "12"}
         alignSelf="center"
@@ -60,7 +61,9 @@ const Header = () => {
         boxShadow="lg"
         boxSize="300"
         zIndex={1}
+        flexShrink={0}
         src={Image1}alt="image"/>
+     
         </Flex>
         </Stack>
         
