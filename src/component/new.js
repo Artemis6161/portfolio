@@ -8,25 +8,42 @@ const AirbnbExample = ({img,title,desc,link}) => {
 return (
  
   <Link href={link} target="_blank" rel="noreferrer">
-  <Flex    borderWidth='2px' borderRadius='10px 10px 0px 0px' overflow='hidden' margin="15px" maxW="350px" height="179px" _hover="{bg: 'green'}"
-     
-onMouseEnter={()=>setshow(true)} 
-  onMouseleave={()=>setshow(false)}>
-{show ?
+  <Flex borderWidth='2px' borderRadius='10px 10px 0px 0px' overflow='hidden' margin="15px" maxW="350px" height="179px" _hover="{bg: 'green'}"
+    onMouseEnter={()=>setshow(true)} 
+    onMouseLeave={()=>setshow(false)}>
+{show ?(
   <span>
-   
-  <Text>{title}</Text>
-            
+   <Text fontSize='3xl'>{title}</Text>
   <Text>{desc}</Text>
-   
-    
-  </span>
- : 
-  <Image width="100%" src={img} alt=""/>
+   </span>
+) : (
+  <Image width="100%" src={img} alt=""/>)
 
 }
 
+
+
+{/* {show ?
+  
+   
+   <Image width="100%" src={img} alt=""/>
+   
+    
+  
+ : 
+ <span>
+  <Text>{title}</Text>
+            
+  <Text>{desc}</Text>
+  </span>
+} */}
+
+
+
+
 </Flex>
+
+{/* </Flex> */}
 
 </Link>
 

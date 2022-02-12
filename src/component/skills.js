@@ -9,10 +9,11 @@ import {
     IoLogoJavascript,
     IoLogoGithub,
     IoLogoPython,
+    IoLogoFirebase,
    
   } from "react-icons/io5"
   import {  DiGit,
-    DiMongodb,} from "react-icons/di"
+    } from "react-icons/di"
 
   export default function App() {
     const { colorMode } = useColorMode();
@@ -91,11 +92,11 @@ import {
           
 
             <Text mr={20} ml={20}> python </Text>
-          <Text mr={7}>  Mongo Db </Text>
+          <Text mr={7}>  Firebase </Text>
           </Flex>
           <Flex  justifyContent="space-between" ml={10} my={5}>
           < IoLogoPython size="100px"color= '#4584b6'/>
-          <DiMongodb size="100px"color= '#4EA94B'/>
+          <IoLogoFirebase size="100px"color= '#FFCB2B'/>
           </Flex>
           </Flex>
           </Flex>

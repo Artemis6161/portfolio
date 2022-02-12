@@ -7,25 +7,25 @@ import Image4 from'../component/img/netflix img.png';
       {
         img: Image1,
         title: "location",
-      desc: "A web app that scrapes information from Indian pc component stores and displays them to the user. It can also give price drop alerts to users. (ongoing)",
-    link: "www.google.com",
+      desc: " Mini web app to find your current Hemisphere",
+    link: "https://fir-c74d8.web.app/",
       },
       {
         img: Image2,
         title: "Todo List",
-        desc: "A web app that scrapes information from Indian pc component stores and displays them to the user. It can also give price drop alerts to users. (ongoing)",
-      link: "www.google.com",
+        desc: "A web app that is used to save your todo list",
+      link: "https://todo-f3444.web.app/",
         },
         {
           img: Image3,
           title: "TicTacToe",
-          desc: "A web app that scrapes information from Indian pc component stores and displays them to the user. It can also give price drop alerts to users. (ongoing)",
-        link: "www.google.com",
+          desc: "let's play tictactoe game......!",
+        link: "https://tictactoe-dcff7.web.app/",
           },
           {
             img: Image4,
             title: "Netflix-Clone",
-            desc: "A web app that scrapes information from Indian pc component stores and displays them to the user. It can also give price drop alerts to users. (ongoing)",
-          link: "www.google.com",
+            desc: "A responsive netflix-clone web application",
+          link: "https://netflix-clone-93d11.web.app/",
             },
         ]
