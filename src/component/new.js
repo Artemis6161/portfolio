@@ -10,10 +10,7 @@ return (
   <Link href={link} target="_blank" rel="noreferrer">
   <Flex    borderWidth='2px' borderRadius='10px 10px 0px 0px' overflow='hidden' margin="15px" maxW="350px" height="179px" _hover="{bg: 'green'}"
      
-
-
-  
-  onMouseEnter={()=>setshow(true)} 
+onMouseEnter={()=>setshow(true)} 
   onMouseleave={()=>setshow(false)}>
 {show ?
   <span>
