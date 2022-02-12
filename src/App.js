@@ -5,7 +5,7 @@ import Product from "./component/product"
 import Contact from "./component/contact"
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import "./App.css";
+// import "./App.css";
 
 import Header from "./component/Header";
 import SocialLinks from "./component/social icon";
