@@ -30,6 +30,7 @@ import {
   return (
    
    <>
+   
    <VStack p={5}>
         <Flex
          position="fixed"
@@ -52,6 +53,7 @@ import {
 {/* 
 <div className="header">
   <div className="header_right"> */}
+    
   
 
   <Flex display={["none", "none", "flex", "flex"]} alignItems="center">

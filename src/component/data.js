@@ -7,13 +7,13 @@ import Image4 from'../component/img/netflix img.png';
       {
         img: Image1,
         title: "location",
-      desc: " Mini web app to find your current Hemisphere",
+      desc: " Mini web app to find your current Hemisphere.",
     link: "https://fir-c74d8.web.app/",
       },
       {
         img: Image2,
         title: "Todo List",
-        desc: "A web app that is used to save your todo list",
+        desc: "A web app that is used to save your todo list.",
       link: "https://todo-f3444.web.app/",
         },
         {
@@ -25,7 +25,7 @@ import Image4 from'../component/img/netflix img.png';
           {
             img: Image4,
             title: "Netflix-Clone",
-            desc: "A responsive netflix-clone web application",
+            desc: "A responsive netflix-clone web application.",
           link: "https://netflix-clone-93d11.web.app/",
             },
         ]
