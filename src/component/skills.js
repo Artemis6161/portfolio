@@ -48,7 +48,7 @@ import {
            
           <Flex  direction="row">
           <Flex  justify="flex-end"  direction="column" my={5} >
-          <Flex   ml={10} mt={20}  my={10}>
+          <Flex   ml={20} mt={20} my={10}>
          
          
         
