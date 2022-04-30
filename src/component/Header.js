@@ -1,6 +1,6 @@
 import React from 'react'
 import Image1 from './img/009 a.jpg';
-import Sa from './img/sa.pdf';
+import Sa from './sange.pdf';
 import { Button } from '@chakra-ui/button';
 import { useColorMode } from '@chakra-ui/color-mode';
 import {Image} from '@chakra-ui/image';
@@ -46,10 +46,11 @@ const Header = () => {
         <Text color={isDark ? "gray.200" : "Gray.900"}> I design and Code simple yet beautiful websites.</Text>
         <Box flexGrow={1} delay={3}>
         
-        <Link href="https://github.com/Artemis6161/portfolio/blob/master/src/component/img/sa.pdf" target="_blank">
-        <Button mt={8} colorScheme="blue" size='lg' fontSize="2xl" aria-label="Send Email" >Hire Me</Button>
-        </Link>
-        
+        {/* <Link src={Sa} target="_blank"> */}
+        <a href={Sa} without rel="noopener noreferrer" target="_blank">
+        <Button mt={8} colorScheme="blue" size='lg' fontSize="2xl" aria-label="Send Email"  >Hire Me</Button>
+        {/* </Link> */}
+        </a>
         </Box>
         </Box>
         
